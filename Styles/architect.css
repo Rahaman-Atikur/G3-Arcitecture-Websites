@@ -115,6 +115,20 @@ main>section{
     font-size: 1.25rem;
     font-weight: 600;
 }
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+}
+.sponsor-companies img{
+    filter: grayscale(100);
+}
 /* Responsive media query */
 @media screen and (max-width: 576px) {
     .navbar, .nav-links {
@@ -133,6 +147,8 @@ main>section{
     }
     .our-features{
         margin: 50px auto;
+    .sponsor-companies{
+        grid-template-columns: repeat(3,1fr);
     }
     
 }
